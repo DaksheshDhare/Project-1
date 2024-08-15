@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e6759;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    background-color: #1e6759;
+    height: 70px;
+}
+
+
+header .logo img {
+    height: 70px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    position: relative; 
+}
+
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: #64d67f; 
+    border-radius: 5px; 
+}
+
+header .profile {
+    display: flex;
+    align-items: center;
+}
+
+header .profile img {
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-image img {
+    width: 500px;
+    height: auto;
+    margin-left: 100px;
+}
+
+.hero-text {
+    max-width: 1000px;
+    padding-right: 10%;
+    margin-left: 20px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    max-width: 700px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-text .tags span {
+    background-color: #e8f4f2;
+    color: #24624d;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.btn-get-started, .btn-features {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-get-started {
+    background-color: #64d67f;
+    color: white;
+}
+
+.btn-features {
+    background-color: white;
+    color: #24624d;
+    border: 1px solid #64d67f;
+}
+
+#platform {
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+}
+
+.platform-description p {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.trusted {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.trusted span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#about {
+    padding: 10px 20px;
+    color: white;
+}
+
+#about .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+#about h1 {
+    margin-bottom: 50px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.team-member {
+    flex: 1 1 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 150%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    color: #888;
+    font-size: 14px;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    color: #333;
+    width: 100%; /* Ensure it takes full width of its container */
+    max-width: 600px; /* Maximum width for larger screens */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; /* Gap between service cards */
+    justify-content: center; /* Center align cards */
+    margin-top: 30px;
+    padding: 0 20px; /* Add some padding for the grid */
+}
+
+
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: #1e6759;
+}
+
+.service-heading{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+.service-card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact form label {
+    margin: 10px 0 5px;
+}
+
+.txt{
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 50px;
+    color: white;
+}
+
+#contact form input, #contact form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#contact form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #64d67f;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
